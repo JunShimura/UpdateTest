@@ -4,6 +4,16 @@ using UnityEngine;
 
 public class CommonFunction : MonoBehaviour
 {
+    /// <summary>
+    /// GetComponent in parent,children,self
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    /// <param name="gameObject"></param>
+    /// <example>
+    /// MonobitView monovitView = CommonFunction.GetComponentInTree<MonobitView>( this.gameObject );
+    /// </example>
+    /// <returns>T</returns>
+
     public static  T GetComponentInTree<T>(GameObject gameObject) where T : Component
     {
 
